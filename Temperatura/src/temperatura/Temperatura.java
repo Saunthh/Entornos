@@ -36,7 +36,7 @@ public class Temperatura {
                 }
             }
         }
-        System.out.println("La temperatura maxima obtenida es " + mayor + " y la temperatura menor obtenida es " + menor + ".");
+        System.out.println("La temperatura maxima obtenida es " + mayor + "ºC y la temperatura menor obtenida es " + menor + "ºC.");
     }
 
 }
