@@ -8,8 +8,10 @@ public class Temperatura {
         int n;
         double menor=0;
         double mayor=0;
+        
         System.out.println("Bienvenido escriba cuantos municipios va a poner.");
         n= entrada.nextInt();
+        
         for (int i= 1; i<=n; i++) {
         System.out.println("Porfavor introduzca una temperatura.");
         temp= entrada.nextInt();
