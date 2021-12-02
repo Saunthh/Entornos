@@ -3,10 +3,12 @@ package temperatura;
 import java.util.Scanner;
 public class Temperatura {
     public static void main(String[] args) {
-        int temp;
-        System.out.println("Bienvenido");
         Scanner entrada= new Scanner(System.in);
-        for (int i= 1; i<=5; i++) {
+        int temp;
+        int n;
+        System.out.println("Bienvenido escriba cuantos municipios va a poner.");
+        n= entrada.nextInt();
+        for (int i= 1; i<=n; i++) {
         System.out.println("Porfavor introduzca una temperatura.");
         temp= entrada.nextInt();
         if (temp<0) {
