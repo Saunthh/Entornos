@@ -11,7 +11,7 @@ public class Temperatura {
         double menor = 0;
         double mayor = 0;
 
-        System.out.println("Bienvenido escriba cuantos municipios va a poner.");
+        System.out.println("Bienvenido, escriba cuantos municipios va a poner.");
         n = entrada.nextInt();
 
         for (int i = 1; i <= n; i++) {
@@ -36,7 +36,7 @@ public class Temperatura {
                 }
             }
         }
-        System.out.println("La temperatura maxima obtenida es " + mayor + "ºC y la temperatura menor obtenida es " + menor + "ºC.");
+        System.out.println("La temperatura maxima introducida es " + mayor + "ºC y la temperatura menor introducida es " + menor + "ºC.");
     }
 
 }
