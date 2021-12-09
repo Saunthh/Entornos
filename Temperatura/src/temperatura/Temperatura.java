@@ -8,8 +8,8 @@ public class Temperatura {
         Scanner entrada = new Scanner(System.in);
         double temp;
         int n;
-        double mayor=Double.MIN_VALUE;
-        double menor=Double.MAX_VALUE;
+        double mayor = 0;
+        double menor = 0;
 
         System.out.println("Bienvenido, escriba cuantos municipios va a poner.");
         n = entrada.nextInt();
