@@ -9,8 +9,8 @@ import java.util.Scanner;
 public class Temperatura {
 
     /**
-     * 
-     * @param args 
+     * Estsa es la funcion principal
+     * @param args Argumentos de entrada de linea de comandoss
      */
     
     public static void main(String[] args) {
