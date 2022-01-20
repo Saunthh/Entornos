@@ -1,42 +1,48 @@
 package temperatura;
 
 import java.util.Scanner;
-
+/**
+ * Coge temperturas las analiza y compara.
+ * @author serdam
+ * @version 1.0
+ */
 public class Temperatura {
 
+    /**
+     * 
+     * @param args 
+     */
+    
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        double temp;
-        int n;
-        double mayor = 0;
-        double menor = 0;
+        double temp[];
+        int n, i = 0;
+        double mayor;
+        double menor;
 
         System.out.println("Bienvenido, escriba cuantos municipios va a poner.");
         n = entrada.nextInt();
-
-        for (int i = 1; i <= n; i++) {
+        temp = new double[n];
+        for (i = 0; i < temp.length; i++) {
             System.out.println("Porfavor introduzca una temperatura.");
-            temp = entrada.nextDouble();
-            if (temp < 0) {
+            temp[i] = entrada.nextDouble();
+        }
+        mayor = temp[0];
+        menor = temp[0];
+        for (i = 0; i < temp.length; i++) {
+            if (temp[i] < 0) {
                 System.out.println("Es negativa.");
-            } else if (temp > 0) {
+            } else if (temp[i] > 0) {
                 System.out.println("Es positiva.");
             } else {
                 System.out.println("Es 0.");
-
-            }
-            if (i == 1) {
-                mayor = temp;
-                menor = temp;
-            } else {
-                if (temp > mayor) {
-                    mayor = temp;
-                } else if (temp < menor) {
-                    menor = temp;
+                if (temp[i] > mayor) {
+                    mayor = temp[i];
+                } else if (temp[i] < menor) {
+                    menor = temp[i];
                 }
             }
         }
         System.out.println("La temperatura maxima introducida es " + mayor + "ºC y la temperatura menor introducida es " + menor + "ºC.");
     }
-
 }
